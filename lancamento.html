@@ -1,46 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lançamento - Novo Ford X</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Lançamento</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img src="img/logo.png" alt="Logo da Ford">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="lancamento.html">Lançamento</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="imagens/ford-logo.png" alt="Ford Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamento.html" class="active">Lançamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Conheça o Novo Ford X</h1>
-    <video controls class="video">
-      <source src="video/promocional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
-    <p>Desempenho, elegância e tecnologia de ponta no novo modelo da Ford.</p>
-    <div class="imagens">
-      <img src="/img/XL Cabine.jpg" alt="Imagem 1">
-      <img src="/img/xls 2.2 diesel.jpg" alt="Imagem 2">
-      <img src="/img/storm.jpg" alt="Imagem 3">
-    </div>
-    <table>
-      <tr><th>Modelo</th><th>Preço</th><th>Comparar</th></tr>
-      <tr><td>Ford X Básico</td><td>R$ 120.000</td><td><input type="checkbox"></td></tr>
-      <tr><td>Ford X Plus</td><td>R$ 140.000</td><td><input type="checkbox"></td></tr>
-      <tr><td>Ford X Premium</td><td>R$ 160.000</td><td><input type="checkbox"></td></tr>
-    </table>
-    <button>Comparar</button>
-  </main>
+    <main>
+        <section class="video-promocional">
+            <h1>Novo Ford [Modelo]</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vQsryuNmsL0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>O novo Ford [Modelo] redefine o conceito de dirigibilidade com seu design inovador e tecnologia de ponta. Equipado com o mais recente sistema de infotainment e recursos de segurança avançados, este veículo oferece uma experiência de condução incomparável.</p>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Ford Brasil</p>
-  </footer>
+        <section class="galeria">
+            <h2>Galeria de Imagens</h2>
+            <div class="imagens-carro">
+                <img src="imagens/XL Cabine.jpg" alt="Ford [Modelo] - modelo XL">
+                <img src="imagens/xls 2.2Cabine.jpg" alt="Ford [Modelo] - modelo xls">
+                <img src="imagens/stormCabine.jpg" alt="Ford [Modelo] - modelo storm">
+            </div>
+        </section>
+
+        <section class="modelos">
+            <h2>Modelos Disponíveis</h2>
+            <form id="comparar-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comparar</th>
+                            <th>Modelo</th>
+                            <th>Motor</th>
+                            <th>Transmissão</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="comparar" value="modelo1"></td>
+                            <td>Ford  XL Cabine Simples</td>
+                            <td>2.2 Diesel</td>
+                            <td>4X4 MT 2002 </td>
+                            <td>R$ 183.850,00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="comparar" value="modelo2"></td>
+                            <td>Ford  XLS 2.2 Diesel</td>
+                            <td>2.2 Diesel</td>
+                            <td>4X4 MT 2022</td>
+                            <td>R$ 220.790,00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="comparar" value="modelo3"></td>
+                            <td>Ford  Storm </td>
+                            <td>3.2 Diesel</td>
+                            <td>4x4 AT 2022</td>
+                            <td>R$ 222.790,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn-comparar">Comparar Modelos</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Ford Motor Company. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
+lancamento.html
+Exibindo lancamento.html.
